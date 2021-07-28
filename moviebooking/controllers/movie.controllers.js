@@ -41,6 +41,9 @@ async function findAllMovies(req, res) {
       res.status(500).send(err.message || "some internal error occurred");
     }
   }
+
+
+  
   
   async function findShows(req, res) {
     try {

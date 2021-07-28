@@ -111,6 +111,8 @@ async function bookShow(req, res) {
         if (!data) throw new Error("unable to book show");
         res.status(200).send(bookingRequest);
       })
+
+      
       .catch(err => {
         res.status(500).send(err.message || "unable to book show");
       });

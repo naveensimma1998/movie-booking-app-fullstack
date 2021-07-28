@@ -12,3 +12,6 @@ async function findAllArtists(req, res) {
   module.exports = {
     findAllArtists,
   };
+
+
+  
