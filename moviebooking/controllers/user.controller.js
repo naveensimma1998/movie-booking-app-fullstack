@@ -112,7 +112,7 @@ async function bookShow(req, res) {
         res.status(200).send(bookingRequest);
       })
 
-      
+
       .catch(err => {
         res.status(500).send(err.message || "unable to book show");
       });
@@ -120,6 +120,7 @@ async function bookShow(req, res) {
     res.status(500).send(err.message || "unable to book show");
   }
 }
+
 
 module.exports = {
   signUp,

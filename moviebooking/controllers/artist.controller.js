@@ -1,5 +1,6 @@
 const { Artist } = require("../models");
 
+
 async function findAllArtists(req, res) {
     try {
       const results = await Artist.find();
@@ -14,4 +15,3 @@ async function findAllArtists(req, res) {
   };
 
 
-  

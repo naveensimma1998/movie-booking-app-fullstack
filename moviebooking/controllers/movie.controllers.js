@@ -26,6 +26,7 @@ async function findAllMovies(req, res) {
         DB_QUERY["artists.first_name"] = {};
         DB_QUERY["artists.first_name"]["$in"] = firstNames;
       }
+      
       const results = await Movie.find(DB_QUERY);
       res.json(results);
     } catch (err) {
@@ -43,7 +44,7 @@ async function findAllMovies(req, res) {
   }
 
 
-  
+
   
   async function findShows(req, res) {
     try {

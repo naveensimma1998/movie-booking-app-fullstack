@@ -36,6 +36,7 @@ db.mongoose
   });
 
 //routing
+
 app.get("/", (req, res) => {
   res.json({
     message: "Welcome to Upgrad Movie booking application development.",
